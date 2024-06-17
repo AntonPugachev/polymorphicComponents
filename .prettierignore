@@ -1,0 +1,6 @@
+# If you add something here, you probably also want to add it to .eslintignore.
+*.d.ts
+.yarn/**
+.pnp.cjs
+
+
