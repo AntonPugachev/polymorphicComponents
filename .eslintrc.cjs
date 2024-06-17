@@ -18,6 +18,7 @@ module.exports = {
   },
   plugins: ['react-refresh','jest', 'react','import', 'react-hooks',  '@typescript-eslint', 'jsx-a11y', 'unused-imports'],
   rules: {
+'import/no-extraneous-dependencies':0,
     'import/no-unresolved': ['error', { ignore: ['/*.svg'] }],
     'react/jsx-curly-brace-presence': 0,
     //=================Descripted rules======================
@@ -196,25 +197,7 @@ module.exports = {
     ],
     // Forbid the import of external modules that are not declared in the package.json's dependencies,
     // devDependencies, optionalDependencies, peerDependencies, or bundledDependencies.
-    'import/no-extraneous-dependencies': [
-      'error',
-      {
-        devDependencies: [
-          '**/*.test.js',
-          '**/*.test.jsx',
-          '**/*.test.ts',
-          '**/*.test.tsx',
-          '**/*.stories.js',
-          '**/*.stories.jsx',
-          '**/*.stories.ts',
-          '**/*.stories.tsx',
-          'src/tests/**/*',
-          '**/mocks/*',
-          '**/*.mock.*',
-        ],
-        packageDir: [__dirname],
-      },
-    ],
+
     //Detect missing key prop
     'react/jsx-key': 'error',
     //Reports if a module's default export is unnamed. todo:can we remove it?

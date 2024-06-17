@@ -3,5 +3,5 @@ module.exports = {
   quoteProps: 'as-needed',
   jsxSingleQuote: true,
   trailingComma: 'all',
-  printWidth: 120,
+  printWidth: 80,
 };

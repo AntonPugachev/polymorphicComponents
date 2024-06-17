@@ -3637,6 +3637,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/classnames@npm:2.3.1":
+  version: 2.3.1
+  resolution: "@types/classnames@npm:2.3.1"
+  dependencies:
+    classnames: "*"
+  checksum: 09a17ea08fcb83380921efdfdac94cfa162f87025cae0bf6f4ba508c2fa5f436459ce7612905a3f968fdddb68c03b8e6ff08e762ed2d0c110c5c4fceb244dc55
+  languageName: node
+  linkType: hard
+
 "@types/connect@npm:*":
   version: 3.4.38
   resolution: "@types/connect@npm:3.4.38"
@@ -5069,6 +5078,13 @@ __metadata:
   dependencies:
     consola: ^3.2.3
   checksum: 3fbcaaea92d328deddb5aba7d629d9076d4f1aa0338f59db7ea647a8f51eedc14b7f6218c87ad03c9e3c126213ba87d13d7774f9c30d64209f4b074aa83bd6ab
+  languageName: node
+  linkType: hard
+
+"classnames@npm:*, classnames@npm:2.5.1":
+  version: 2.5.1
+  resolution: "classnames@npm:2.5.1"
+  checksum: da424a8a6f3a96a2e87d01a432ba19315503294ac7e025f9fece656db6b6a0f7b5003bb1fbb51cbb0d9624d964f1b9bb35a51c73af9b2434c7b292c42231c1e5
   languageName: node
   linkType: hard
 
@@ -11393,11 +11409,13 @@ __metadata:
     "@storybook/react": ^8.1.9
     "@storybook/react-vite": ^8.1.9
     "@storybook/test": ^8.1.9
+    "@types/classnames": 2.3.1
     "@types/react": ^18.2.66
     "@types/react-dom": ^18.2.22
     "@typescript-eslint/eslint-plugin": ^7.13.0
     "@typescript-eslint/parser": ^7.13.0
     "@vitejs/plugin-react": ^4.2.1
+    classnames: 2.5.1
     cz-customizable: 7.0.0
     eslint: ^8.57.0
     eslint-config-airbnb-typescript: ^18.0.0
