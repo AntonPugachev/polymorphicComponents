@@ -1,0 +1,45 @@
+.button {
+   position: relative;
+   box-sizing: border-box;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0;
+   width: auto;
+   box-shadow: 0 0 0 2px  transparent;
+   border-radius: 8px;
+   background-color: transparent;
+   cursor: pointer;
+   transition: 0.15s ease-in all;
+   white-space: nowrap;
+   font-style: normal;
+   font-weight: 400;
+   letter-spacing: 0;
+   font-size: 16px;
+   line-height: 24px;
+   user-select: none;
+
+   & svg {
+     display: block;
+   }
+ }
+// Primary
+
+.button--primary {
+  background-color: var(--basic-primary);
+  color: var(--text-static-white);
+}
+
+.button--primary:hover,
+.button--primary:focus-visible {
+  background-color: var(--basic-hover);
+}
+
+.button--primary:active {
+  background-color: var(--basic-press);
+}
+
+.button--primary:disabled {
+  background-color: var(--background-tertiary);
+  color: var(--text-tertiary);
+}

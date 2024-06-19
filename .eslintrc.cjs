@@ -18,6 +18,9 @@ module.exports = {
   },
   plugins: ['react-refresh','jest', 'react','import', 'react-hooks',  '@typescript-eslint', 'jsx-a11y', 'unused-imports'],
   rules: {
+    "@typescript-eslint/ban-ts-comment":0,
+    "@typescript-eslint/ban-types":0,
+    "object-property-newline":0,
 'import/no-extraneous-dependencies':0,
     'import/no-unresolved': ['error', { ignore: ['/*.svg'] }],
     'react/jsx-curly-brace-presence': 0,
@@ -144,7 +147,6 @@ module.exports = {
     //Enforces the location of single-line statements
     'nonblock-statement-body-position': ['error', 'below'],
     //Enforces placing object properties on separate lines
-    'object-property-newline': 'error',
     //Requires or disallows padding lines between statements
     'padding-line-between-statements': [
       'error',

@@ -3,12 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "start": "storybook dev -p 6006",
     "commit": "node ./.commitzen/gitAddFile.cjs && node ./node_modules/cz-customizable/standalone.js"
   },
   "dependencies": {
@@ -62,5 +58,6 @@
   "resolutions": {
     "@typescript-eslint/eslint-plugin": "^7.13.0",
     "@typescript-eslint/parser": "^7.13.0"
-  }
+  },
+  "packageManager": "pnpm@8.6.10+sha1.98fe2755061026799bfa30e7dc8d6d48e9c3edf0"
 }
