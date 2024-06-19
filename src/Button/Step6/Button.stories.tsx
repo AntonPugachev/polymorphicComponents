@@ -9,14 +9,13 @@ export default {
 } as Meta;
 
 export const Step6Demo = () => {
-  const flexLayout = { display: 'flex', gap: '1rem', flexWrap: 'wrap' };
   return (
     <>
-      <StoryItem style={flexLayout} description={'Text button'} subtitle={'Creating a separate components'}>
+      <StoryItem description={'Text button'} subtitle={'Creating a separate components'}>
         <TextButton text='This is  a button' size={'small'} />
         <TextButton text='This is  a button' size={'large'} />
       </StoryItem>
-      <StoryItem style={flexLayout} description={'Icon button'}>
+      <StoryItem description={'Icon button'}>
         <IconButton icon={<AirplaneIcon />} size={'small'} />
         <IconButton icon={<AirplaneIcon />} size={'medium'} />
         <IconButton icon={<AirplaneIcon />} size={'large'} />
@@ -27,7 +26,7 @@ export const Step6Demo = () => {
         <IconButton variant='destructive' icon={<AirplaneIcon />} size={'medium'} />
         <IconButton variant='destructive' icon={<AirplaneIcon />} size={'large'} />
       </StoryItem>
-      <StoryItem style={flexLayout} description={'Default button'}>
+      <StoryItem description={'Default button'}>
         <DefaultButton text='This is  a button' size={'small'} />
         <DefaultButton text='This is  a button' size={'medium'} />
         <DefaultButton text='This is  a button' size={'large'} />
@@ -38,8 +37,13 @@ export const Step6Demo = () => {
         <DefaultButton text='This is  a button' size={'medium'} variant={'destructive'} />
         <DefaultButton text='This is  a button' size={'large'} variant={'destructive'} />
       </StoryItem>
-      <StoryItem style={flexLayout} description={'Blank button'}>
+      <StoryItem description={'Blank button'}>
         <BlankButton> This is a button</BlankButton>
+      </StoryItem>
+      <StoryItem description={'Links'}>
+        <TextButton as={'a'} text='This is a link button' href={''} />
+        <IconButton as={'a'} icon={<AirplaneIcon />} href={''} size={'large'} />
+        <DefaultButton as={'a'} text='This is a link button' href={''} />
       </StoryItem>
     </>
   );

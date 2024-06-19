@@ -8,14 +8,13 @@ export default {
 } as Meta;
 
 export const Step5Demo = () => {
-  const flexLayout = { display: 'flex', gap: '1rem', flexWrap: 'wrap' };
   return (
     <>
-      <StoryItem style={flexLayout} description={'Text button'} subtitle={'Creating different buttons'}>
+      <StoryItem description={'Text button'} subtitle={'Creating different buttons'}>
         <Button componentType={'text'} text='This is  a button' size={'small'} />
         <Button componentType={'text'} text='This is  a button' size={'large'} />
       </StoryItem>
-      <StoryItem style={flexLayout} description={'Icon button'}>
+      <StoryItem description={'Icon button'}>
         <Button componentType={'icon'} icon={<AirplaneIcon />} size={'small'} />
         <Button componentType={'icon'} icon={<AirplaneIcon />} size={'medium'} />
         <Button componentType={'icon'} icon={<AirplaneIcon />} size={'large'} />
@@ -26,7 +25,7 @@ export const Step5Demo = () => {
         <Button variant='destructive' componentType={'icon'} icon={<AirplaneIcon />} size={'medium'} />
         <Button variant='destructive' componentType={'icon'} icon={<AirplaneIcon />} size={'large'} />
       </StoryItem>
-      <StoryItem style={flexLayout} description={'Default button'}>
+      <StoryItem description={'Default button'}>
         <Button componentType={'default'} text='This is  a button' size={'small'} />
         <Button componentType={'default'} text='This is  a button' size={'medium'} />
         <Button componentType={'default'} text='This is  a button' size={'large'} />

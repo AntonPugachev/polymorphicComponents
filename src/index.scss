@@ -90,7 +90,6 @@
   --shadow-non-clickable: 0px 4px 16px rgba(138, 150, 168, 0.4), 0px 0px 6px rgba(138, 150, 168, 0.08);
   --shadow-clickable-hover: 0px 8px 16px rgba(138, 150, 168, 0.4), 0px -2px 8px rgba(138, 150, 168, 0.08);
 
-  // старые переменные !!!!! НЕ ИСПОЛЬЗОВАТЬ !!!!!!!!!!!!!
   --base-000: #ffffff;
   --base-100: #f7f9fc;
   --base-150: #f0f4fa;
@@ -200,7 +199,10 @@ h1 {
   line-height: 1.1;
 }
 
-button {
+button, a {
+  &:hover{
+    cursor: pointer;
+  }
   border-radius: 8px;
   border: none;
   padding: 0.6em 1.2em;
