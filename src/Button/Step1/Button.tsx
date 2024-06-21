@@ -1,5 +1,5 @@
 import type { ElementType, HTMLAttributes } from 'react';
-import './Button.scss';
+import styles from './Button.module.scss';
 import cx from 'classnames';
 interface IButton extends HTMLAttributes<HTMLElement> {
   text?: string;
@@ -9,7 +9,7 @@ interface IButton extends HTMLAttributes<HTMLElement> {
 export const Button = ({ as, text, ...props }: IButton) => {
   const Component: ElementType = as || 'button';
   return (
-    <Component {...props} className={cx(props.className, 'button', 'button--primary')}>
+    <Component {...props} className={cx(props.className, styles.button, styles['button--primary'])}>
       {text}
     </Component>
   );
